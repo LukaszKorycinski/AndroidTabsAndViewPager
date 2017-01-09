@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <!--app:tabMode="fixed"          show all tabs   aslo can by set: scrollable-->
+        <!--app:tabGravity="fill"       "fill" to space out tabs to fill available space, "centre" to cluster the tabs in the middle of the TabLayout-->
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabGravity="fill" />
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
+</LinearLayout>
